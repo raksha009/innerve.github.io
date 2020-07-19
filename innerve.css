@@ -1,0 +1,85 @@
+
+.innerve{
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.subheading{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.dates{
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.time{
+    font-size:100px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a{
+    margin: 0px -10px 0px 50px ;
+    color: aliceblue;
+    font-weight: 700;
+    text-align:center;
+    font-size: 20px;
+}
+a:hover{
+    color:chocolate;
+    text-decoration: none;
+}
+
+.registerbutton{
+    padding-left: 545px;
+}
+
+.footer{
+    color: aliceblue;
+    left:auto;
+    right: 
+    position: absolute;
+
+}
+td{
+    padding-right:90px;
+}
+
+
+@media(max-width: 780px){
+    body{
+        overflow:scroll;
+    }
+}
+
+
+@media(max-width: 320px){
+    body{
+        overflow: auto;
+    }
+    a{
+        margin: 0px 0px 0px 10px;
+        font-size: 1px;
+    }
+    .registerbutton{
+    padding-left: 5px;
+    }
+    .footer{
+        color: aliceblue;
+        left:auto;
+        right: 
+        position: absolute;
+        bottom:10px;
+
+    }  
+    .registerbutton{
+        padding-left: 5px;
+    }
+}

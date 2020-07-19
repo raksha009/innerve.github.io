@@ -1,0 +1,126 @@
+<!doctype>
+<html>
+<head> <title> Innerve 2020 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "innerve.css">
+    <style>
+    
+  /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+/*  bottom: 0;*/
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}  
+    
+    
+    
+    
+    </style>
+    
+    
+    </head>
+    
+<body>
+<video autoplay muted loop id="myVideo">
+    <source src="comp.mp4" type="video/mp4">
+</video>
+
+    <div class= "content">
+        <div class = "header">
+        <img src="innerve_logo.png" alt = "Innerve Log" style="height: 100px; width: 200px; object-fit: cover; margin-right: 250px">
+            
+
+        <a href = "about.html" target="_blank" >ABOUT</a>
+            <a href = "https://www.innerve-igdtuw.com/g.html" target="_blank">GALLERY</a>
+            <a href = "comingsoon1.html" >EVENTS</a>
+            <a href = "comingsoon1.html" >SPONSORS</a>
+            <a href = "comingsoon1.html" >MEET THE TEAM</a>
+        </div>
+        
+        
+        <div class = "innerve" style="color: aliceblue">
+        INNERVE 
+        </div>
+        <div class = "subheading" style="color:cadetblue">
+        Get Set Innovate!
+        </div>
+        <div class = "dates" style="color: aliceblue">
+        11th Oct - 12th Oct
+        </div>
+        <div class = "time">
+        <p class=" stretch " id ="demo" style="font-family: 'Orbitron'; color: #6ab7ff; font-size: 25px;"></p>
+        </div>
+        
+        <div class = "registerbutton">
+        <button style="border-radius: 20px;background: rgba(0, 0, 0, 0.5);color: aliceblue;font-weight: bold; height: 50px; width: 100px" id = "button" value="Register">REGISTER</button>
+        </div>
+        
+
+        <br><br>
+        <div class = "footer">
+        <table style="color: aliceblue; margin-right: auto; margin-left: auto;">
+            
+            <tr>
+                <td>INNERVE-20 </td>
+                <td > Madrasa Road Opposite St. James Church,        </td>
+                <td><a href = "https://www.innerve-igdtuw.com/cc.html" style = "font-size: 15px;">CODE OF CONDUCT </a></td>
+            </tr>
+            <tr>
+                <td> &copy; 2020 Innerve IGDTUW. All rights reserved.</td>
+                <td> Kashmere Gate, New Delhi, Delhi 110006.</td>
+                <td> innervewebd20@gmail.com</td>
+            </tr>
+            <tr></tr>
+            </table>
+        </div>
+        
+        
+        </div>
+    
+    
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 11, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "00d 00h 00m 00s";
+  }
+}, 1000);
+</script>
+</body>
+</html>
